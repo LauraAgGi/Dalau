@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+:root{
+    --l1:white;
+    --l2:rgb(241, 226, 247);
+    --l3:blanchedalmond;
+    --c1:#461665;
+    --c2:rgb(149, 124, 209);
+    --f1:'DynaPuff', cursive;
+    --f2:sans-serif;
+
+}
+
+
+body{
+    background-image:linear-gradient(45deg,var(--c1),var(--c2), var(--c1));
+    font-family: var(--f1);
+    max-width: 960px;
+    margin: 20px auto;
+    color:var(--l2);
+    text-align: center;
+    min-height: 100vh;
+    font-family: var(--f1);
+   
+}
+h1{
+    text-shadow: 2px 2px 2px #000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--l2);
+    padding: 0px;
+}
+header nav ul.menu {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 0;
+}
+footer{
+    background: var(--l2);
+    padding: 5px;    
+}
+nav img{
+    height:100px;
+}
+
+.menu a, footer p a{
+ color:var(--c1);
+}
+footer ul.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+a, p#cierre{
+     color:var(--l1);
+    text-decoration: none;}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    color:var(--c1);
+    font-family: 'DynaPuff', cursive;
+    word-spacing: 10px;
+}
+
+/*Index---------------------------------------*/
+#fotaza{
+    border-radius: 30px;
+    width: 100%;
+}
+
+
+.subdestacado h2{
+    background: var(--l3);
+    color:var(--c1);
+    padding: 20px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px;
+}
+
+.tipos ul{ display:grid; gap:20px; grid-template-columns:repeat(3, 1fr);}
+
+.tipos h3, p{color:var(--c1);}
+.tipos ul li{
+     background:var(--l3);
+     border-radius: 20px 20px 0px 0px;
+}
+.tipos ul li img{
+    border-radius: 20px 20px 0px 0px;
+}
+.tipos ul li img{ width:100%; height:200px; object-fit:cover;}
+
+/* Vistas */
+/*Vista1*/
+.vista1 p{
+    display:none
+}
+.vista1 img{
+    width:100%;
+    display: block;
+    margin:0 auto;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+ul.vista1 li{
+    background:var(--c1);
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+/*Vista*/
+ul.vista2{
+    margin:10px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+    justify-content: space-around;
+}
+
+.vista2 p{
+    color:var(--l2);
+    margin-left: 5px;
+}
+.vista2 img{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+ul.vista2 li{
+    width: 400px;
+    background:var(--c1);
+    padding: 5px;
+    border-radius: 20px;
+    margin:0px auto 10px;
+}
+ul.vista2 h3{
+    height: 50px;
+}
+ul.vista2 p{
+    height:60px;
+}
+/*Vista3*/
+.vista3 img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+ul.vista3 h3{
+ width: 100%;
+ margin-left:20px;
+}
+ul.vista3 h4{
+   width:100%;
+   
+}
+ul.vista3 p{
+    display:none;
+}
+ul.vista3{
+    display: block;
+}
+ul.vista3 li{
+ display:grid;
+ width:100%;
+ margin-bottom: 10px;
+ grid-template-columns:repeat(3, 1fr);
+ align-items: center;
+ justify-items: center;
+ text-align: center;
+ padding: 0;
+  
+}
+/*Boton de seleccionar*/
+select{
+    margin-bottom:20px;
+}
+/*Boton cambiar de vista*/
+#btn{
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--l2);
+    color:var(--c1);
+    font-weight: bold;
+    margin:10px;
+}
+
+.nosotros{
+    display:flex;
+    background: var(--l2);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    padding: 20px;
+    text-indent: 18px;
+    text-align: left;
+    
+}
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.nosotros h2{
+    color:var(--c1);
+    text-decoration: underline;
+}
+
+.nosotros p{
+    color:var(--c1);
+    width: 500px;
+    margin-left: 15px;
+}
+
+#nosotros{
+    border-radius: 100px 5px 100px 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul.menu li:last-child a{
+    color:red;
+}
+
+form{
+    margin:10px;
+}
+form select{
+    margin-bottom: 5px;
+}
+/* Usuario al iniciar sesión*/
+.usuario{
+    background: var(--c1);
+    padding: 7px;
+    border-radius: 20px;
+    font-size:10px;
+    padding-bottom: 5px;
+}
+.usuario p,.usuario p a{
+    color:rgb(242, 234, 234);
+    font-size:12px;
+    line-height: 4px;
+}
+header nav ul.menu .usuario p a{
+    color:white;
+}
+
+/* avatar */
+.usuario img.avatar{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius:20%;
+}
+#cierre p{
+    color:var(--l1);
+}
+
+/*Diseño del archivo para la instalación*/
+ul.install{
+  background: var(--l2);
+  border-radius: 20px;
+}
+ul.install h3, ul.install p, ul.intall a{
+    color:var(--c2);
+    text-shadow:2px 2px 2px #000;
+}
+
+
+/*Ficha*/
+.ficha .foto img{
+    margin-top:20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #000;
+    width:80%;
+    height:50vhF;
+    object-fit: cover;
+}
+.ficha .datos h1{
+    color:var(--l1);
+}
+.ficha .datos h2{
+    color:var(--c1);
+}
+.ficha .datos p#precio{
+    color:var(--l1);
+    font-size: 40px;
+}
