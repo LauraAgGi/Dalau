@@ -1,5 +1,5 @@
 <?php include 'fragmentos/_config.php';?>
-
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <?php
 conectar();
 if (isset($_GET['id'])) {
@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
 $sql_count = "SELECT COUNT(*) as count FROM inmuebles";
 $result_count = $conn->query($sql_count);
 $count = $result_count->fetch_assoc()['count'];
-$sql = "SELECT a.id, a.nombre, a.descripcion, a.precio, a.tipo, a.foto, b.id, b.nombre FROM inmuebles a INNER JOIN tipos b ON a.tipo =b.id WHERE a.id=$id";
+$sql = "SELECT a.id, a.nombre, a.descripcion, a.precio, a.tipo, a.foto, a.latitud, a.longitud, b.id, b.nombre FROM inmuebles a INNER JOIN tipos b ON a.tipo =b.id WHERE a.id=$id";
 // Ejecutar la consulta SQL
 $resultado = $conn->query($sql);
 
@@ -34,7 +34,8 @@ if ($resultado->num_rows > 0) {
       <h2><span><?php echo $fila["descripcion"]?></span>
       <p><span>Tipo de inmueble:</span> <? echo $fila["nombre"];?></p>
       <p id="precio"><span>Precio:</span> <? echo $fila["precio"];?> €</p>
-    
+      <button onclick="mostrarMapa(<?php echo $fila["latitud"];?>, <?php echo $fila["longitud"];?>)" id="btnmap">Ver situación</button>
+
     </div>
     
     <?php
@@ -44,10 +45,11 @@ if ($resultado->num_rows > 0) {
       echo "No se encontraron resultados";
     }
     ?>
-    
     </div>
-    <div class="botonera">
     
+    <div id="showMap" style="width: 450px; height: 350px;"></div>
+
+    <div class="botonera">
     <?php
     // Comprobar si hay una fila anterior
     $prev_id = $id - 1;
@@ -75,5 +77,7 @@ if ($resultado->num_rows > 0) {
     ?>
     </div>
     
+    
+    <script src="js/myscriptmap.js"></script>
 
 <?php include 'fragmentos/_footer.php';?>

@@ -290,7 +290,7 @@ ul.install h3, ul.install p, ul.intall a{
     border-radius: 20px;
     box-shadow: 2px 2px 4px #000;
     width:80%;
-    height:50vhF;
+    height:500px;
     object-fit: cover;
 }
 .ficha .datos h1{
@@ -302,4 +302,13 @@ ul.install h3, ul.install p, ul.intall a{
 .ficha .datos p#precio{
     color:var(--l1);
     font-size: 40px;
+}
+
+/* Mapa */
+#showMap{
+    display:block;
+    margin:5px auto;
+}
+.botonera{
+    margin:10px;
 }
