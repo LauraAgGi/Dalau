@@ -3,7 +3,7 @@
 <?php include 'fragmentos/_header.php';?>
 <h1>Estos son nuestros <?php echo $titulo ?></h1>
 <h2>Inmuebles destacados</h2>
-<button onclick="cambiarVista()" id="btn">Cambiar Vista</button>
+<button onclick="cambiarVista()" id="btn" class="boton">Cambiar Vista</button>
 <!-- <h3 id="titulillo">Hola</h3> -->
 <?php
 conectar();   

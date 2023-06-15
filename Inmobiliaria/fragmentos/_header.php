@@ -18,7 +18,7 @@
     <header>
         <nav>
           <img src="img/dalaulogo.png" alt="Logo Daluu">
-          <h2 class="logo">Inmobiliaria Dalau</h2>
+          <h2 class="empresa">Inmobiliaria Dalau</h2>
           <?php include 'fragmentos/_menu.php';?>
         </nav>
     </header>

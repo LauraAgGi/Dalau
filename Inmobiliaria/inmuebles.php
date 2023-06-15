@@ -1,8 +1,7 @@
-
-<?php $titulo="Inmobiliaria Dalau" ?>
+<?php $titulo="Nuestros inmuebles" ?>
 <?php include 'fragmentos/_config.php'?>
 <?php include 'fragmentos/_header.php';?>
-<button onclick="cambiarVista()" id="btn">Cambiar Vista</button>
+<button onclick="cambiarVista()" id="btn" class="boton">Cambiar Vista</button>
 <form action="inmuebles.php" method="post">
   <label for="inmuebles" method="post">Elije tu inmueble:</label>
   <select name="inmuebles" id="inmuebles">

@@ -5,6 +5,7 @@
     --l3:blanchedalmond;
     --c1:#461665;
     --c2:rgb(149, 124, 209);
+    --c3:rgb(77, 15, 15);
     --f1:'DynaPuff', cursive;
     --f2:sans-serif;
 
@@ -56,10 +57,17 @@ footer ul.menu{
     justify-content: center;
     gap:10px;
 }
+p#cierre,p#cierre a{
+    color:var(--l1);
+}
+footer p{
+ color:var(--c1);
+}
+a{
+    color:var(--l1);
+    text-decoration: none;
 
-a, p#cierre{
-     color:var(--l1);
-    text-decoration: none;}
+}
 ul{
     list-style: none;
     padding-left: 0;
@@ -67,7 +75,7 @@ ul{
 img{
     max-width: 100%;
 }
-.logo{
+.empresa{
     color:var(--c1);
     font-family: 'DynaPuff', cursive;
     word-spacing: 10px;
@@ -90,7 +98,7 @@ img{
 
 .tipos ul{ display:grid; gap:20px; grid-template-columns:repeat(3, 1fr);}
 
-.tipos h3, p{color:var(--c1);}
+.tipos h3{color:var(--c1);}
 .tipos ul li{
      background:var(--l3);
      border-radius: 20px 20px 0px 0px;
@@ -190,11 +198,12 @@ select{
     margin-bottom:20px;
 }
 /*Boton cambiar de vista*/
-#btn{
+.boton{
     padding: 10px;
+    border:1px solid var(--c3);
     border-radius: 20px;
-    background: var(--l2);
-    color:var(--c1);
+    background: var(--c3);
+    color:var(--l1);
     font-weight: bold;
     margin:10px;
 }
@@ -277,12 +286,16 @@ header nav ul.menu .usuario p a{
 ul.install{
   background: var(--l2);
   border-radius: 20px;
+  padding: 10px;
 }
-ul.install h3, ul.install p, ul.intall a{
+ul.install h3, ul.install p{
     color:var(--c2);
-    text-shadow:2px 2px 2px #000;
+    text-shadow:2px 2px 2px var(--l1);
 }
-
+ul.install a{
+    color:var(--c1);
+    text-shadow:2px 2px 1px var(--l1);
+}
 
 /*Ficha*/
 .ficha .foto img{
@@ -312,3 +325,30 @@ ul.install h3, ul.install p, ul.intall a{
 .botonera{
     margin:10px;
 }
+
+/* css de la ficha InmueblesCRUD */
+ul.inmueble{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin:10px 0px;
+}
+ul.crud img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+} 
+
+ul.inmueble:nth-last-child(2n){
+   background: var(--l2);
+   color:var(--c1);
+}
+ul.inmueble:nth-last-child(2n+1){
+    background: var(--c2);
+    color:var(--l1);
+}
+
+ul.datos{
+    padding: 12px;
+    padding-bottom: 25px;
+}
+
