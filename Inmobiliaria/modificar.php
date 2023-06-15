@@ -9,16 +9,16 @@ if (isset($_GET['id'])) {
     $id = 1;
   }
 
-$sql = "SELECT *FROM inmuebles WHERE 'id'=$id";
-// Ejecutar la consulta SQL
+$sql = "SELECT * FROM inmuebles WHERE id = $id";
+// Ejecutar la consulta SQL'
 $resultado = $conn->query($sql);
 
 // Verificar si hay resultados
 if ($resultado->num_rows > 0) {
  
   // Recorrer los resultados y mostrarlos
-  while($fila = $resultado->fetch_assoc()) {
-    $titulo=$fila["nombre"]." ".$fila["descripcion"]." ficha."; 
+  while($row = $resultado->fetch_assoc()) {
+    $titulo=$row["nombre"]." ".$row["descripcion"]." ficha."; 
     include 'fragmentos/_header.php';
     echo '<ul class="inmueble">';
     echo '<li>';
@@ -36,8 +36,8 @@ if ($resultado->num_rows > 0) {
             echo "<li>Es un destacado</li>";
         }
         echo "<h4>".$row["precio"]. " €". "</h4>";
-        echo '<a href="modificar.php?id='.$row["id"].'" class="btn">Modificar</a>';
-        echo '<a href="preguntareli.php" class="btn">Eliminar</a>';
+        echo '<a href="Guardar.php?id='.$row["id"].'" class="boton">Modificar</a>';
+        echo '<a href="Cancelar.php" class="boton">Eliminar</a>';
         echo '</ul>';// Fin de la lista datos
     echo "</li>";
    echo '</ul>';//Fin de la clase inmueble

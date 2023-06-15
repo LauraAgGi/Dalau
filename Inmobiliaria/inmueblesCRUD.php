@@ -24,8 +24,8 @@ if ($result->num_rows > 0) {
                 echo "<li>Es un destacado</li>";
             }
             echo "<h4>".$row["precio"]. " €". "</h4>";
-            echo '<a href="modificar.php?id='.$row["id"].'" class="btn">Modificar</a>';
-            echo '<a href="preguntareli.php" class="btn">Eliminar</a>';
+            echo '<a href="modificar.php?id='.$row["id"].'" class="boton">Modificar</a>';
+            echo '<a href="preguntareli.php" class="boton">Eliminar</a>';
             echo '</ul>';// Fin de la lista datos
         echo "</li>";
      echo '</ul>';//Fin de la clase inmueble
