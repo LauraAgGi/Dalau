@@ -1,6 +1,7 @@
 <?php $titulo="CRUD de los inmuebles" ?>
 <?php include 'fragmentos/_config.php'?>
 <?php include 'fragmentos/_header.php';?>
+<a href="insertar.php" class="boton" id="insert">Insertar nuevo inmueble</a>
 <?php
 conectar();
 $sql = "SELECT * FROM inmuebles;";

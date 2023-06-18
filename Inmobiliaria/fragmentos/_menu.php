@@ -1,10 +1,10 @@
 <ul class="menu">
-    <li><a href="<?u()?>">Inicio</a></li>   
+    <li><a href="<?php u()?>">Inicio</a></li>   
    <?php
     abrirsesion();
     if(isset($_SESSION['usuario'])){
     ?>
-        <li><a href="<? u()?>inmueblesCRUD.php">InmueblesCRUD</a></li>
+        <li><a href="<?php u()?>inmueblesCRUD.php">InmueblesCRUD</a></li>
     <?php
        if($_SESSION['rol']=='admin'){
        echo '<li><a href="__instalacion.php">Instalacion</a></li>';
@@ -16,12 +16,12 @@
        echo '</div>'; 
     ?>
     
-    <? }else{?>
+    <?php }else{?>
 
-        <li><a href="<? u()?>destacados.php">Inmuebles</a></li>
-        <li><a href="<? u()?>nosotros.php">Nosotros</a></li>
-        <li><a href="<? u()?>contacto.php">Contacto</a></li>
-        <li><a href="<? u()?>login.php">Zona Restringida</a></li>
+        <li><a href="<?php u()?>destacados.php">Inmuebles</a></li>
+        <li><a href="<?php u()?>nosotros.php">Nosotros</a></li>
+        <li><a href="<?php u()?>contacto.php">Contacto</a></li>
+        <li><a href="<?php u()?>login.php">Zona Restringida</a></li>
 
   <?php   } ?>
 

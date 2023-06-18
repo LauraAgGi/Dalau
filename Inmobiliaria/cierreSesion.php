@@ -9,4 +9,4 @@ session_destroy();
 
 <h1>La sesión se ha cerrado</h1>
 <p id="cierre">Para volver a iniciar sesión tendrá que loguearse en: <a href="login.php">  Acceder</a></p>
-<? include 'fragmentos/_footer.php'; ?>
+<?php include 'fragmentos/_footer.php'; ?>

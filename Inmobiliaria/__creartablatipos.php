@@ -4,7 +4,7 @@
 
 
 
-<? 
+<?php
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $basename);
@@ -14,9 +14,9 @@ if ($conn->connect_error) {
 }
 
 // Create Tabla Tipos
-$sql = "CREATE TABLE IF NOT EXISTS `tipo` (
+$sql = "CREATE TABLE IF NOT EXISTS `tipos` (
   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `nombre` varchar(255) NOT NULL
+  `nombre_tipo` varchar(255) NOT NULL
 );";
 if ($conn->query($sql) === TRUE){
   echo "Se ha creado ";
@@ -26,10 +26,8 @@ if ($conn->query($sql) === TRUE){
 // cierre de conexión
 $conn->close();
 
-
-
 ?>
 
-<p> Se acaba de crear la tabla de datos: tipo</p>
+<p> Se acaba de crear la tabla de datos: tipos</p>
 
 <a href="__instalacion.php">Volver a Instalador</a>

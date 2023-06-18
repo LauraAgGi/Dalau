@@ -14,13 +14,15 @@
     <h3>Creacion de nuestros de nuestros inmuebles en la tabla "Inmuebles":</h3>
     <p><li><a href="__crearinmuebles.php">Crear Inmuebles</a></li></p>
     <p><li><a href="__crearusuarios.php">Crear Usuarios</a></li></p>
+    <p><li><a href="__creartipos.php">Crear Tipos</a></li></p>
+
     <li><a href="--borrar.php">Borrar Base de Datos</a></li>
   </ul>
  
   <br>
   
-  
   <a href="index.php">Volver a Inicio</a>
-
+  
+  
 
 <?php include 'fragmentos/_footer.php';?>

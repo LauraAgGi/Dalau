@@ -17,24 +17,29 @@
 if(isset($_POST['inmuebles'])){
   conectar();
   $inmuebletipo=$_POST['inmuebles'];
-  global $tipo;
+  global $titulin;
 switch ($inmuebletipo) {
   case "casas":
     $sql = "SELECT * FROM inmuebles WHERE `tipo`='1';";
+    $titulin="Nuestras casas";
     break;
   case "pisos":
     $sql = "SELECT * FROM inmuebles WHERE `tipo`='2';";
+    $titulin="Nuestros pisos";
     break;
   case "fincas":
     $sql = "SELECT * FROM inmuebles WHERE `tipo`='3';";
+    $titulin="Nuestras fincas";
     break;
   case "todo":
     $sql = "SELECT * FROM inmuebles;";
+    $titulin="Todos nuestros inmuebles";
     break; 
 }
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+  echo '<h2>'.$titulin.'</h2>';
   echo '<ul id="lista" class="vista1">';
   while($row = $result->fetch_assoc()) {
     $precio =$row["precio"];

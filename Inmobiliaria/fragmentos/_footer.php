@@ -8,7 +8,7 @@
   </body>
 </html>
 
-<?
+<?php
 //Cerrar conexión
 if($conexionabierta){
   $conn->close();

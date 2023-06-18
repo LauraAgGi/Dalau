@@ -15,7 +15,7 @@ if(isset($_POST['usuario']) && isset($_POST['password'])){
       $mifoto=$row["foto"];
     }
   } else {
-  echo "El usuario no está en nuestra base de datos";
+  echo "El usuario no está en nuestra base de datos.<br>";
   } 
 }
 if(isset($miusuario)&&isset($mipassword)){

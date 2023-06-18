@@ -17,13 +17,13 @@ if(!$conn->set_charset("utf8")){
   exit;
 }
 // Create Tabla Tipos
-$sql = "INSERT INTO `usuarios` (`usuario`, `pass`, `email`, `rol`,`foto` ,`timestamp`)
-VALUES ('Laura','Laura','laura@dalau.com','admin','fotoLaura',now()),
-       ('David','David','david@dalau.com','admin','fotoDavid',now()),
-       ('Pepito','Pepito','pepito@dalau.com','staff','fotoPepito',now()),
-       ('Manolita', 'Manolita', 'manolita@dalau.com', 'staff','fotoManolita', now());";
+$sql = "INSERT INTO `tipos` (`nombre_tipo`)
+VALUES ('Casa'),
+       ('Piso'),
+       ('Finca')";
+    
 if ($conn->query($sql) === TRUE){
-  echo "Se han creado nuevos usuarios ";
+  echo "Se han creado nuevos tipos ";
 } else {
   echo "Error: " . $conn->error;
 }
@@ -34,7 +34,7 @@ $conn->close();
 
 ?>
 
-<p> Se acaban de insertar inmuebles en la tabla de datos: inmuebles</p>
+<p> Se acaban de insertar los diferentes tipos de inmuebles</p>
 
 <a href="__instalacion.php">Volver a Instalador</a>
 <?php include 'fragmentos/_footer.php';?>

@@ -4,7 +4,7 @@
 
 
 
-<? 
+<?php
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $basename);
@@ -32,7 +32,7 @@ VALUES ('Piso en calle la Argandona,2, Centro-Puerto, Gijón', 'En el principio 
        ('Piso en calle Avenida José Manuel Palacio','vivienda forma parte de un edificio construido en el año 2006 en la calle Jose Manuel Palacio Alvarez 44, un emplazamiento muy próximo a la playa de Poniente','Foto012','205000','2','43.53547','-5.70210',0)
        ;";
 if ($conn->query($sql) === TRUE){
-  echo "Se ha creado ";
+  echo "Se han añadido inmuebles a la base de datos";
 } else {
   echo "Error: " . $conn->error;
 }

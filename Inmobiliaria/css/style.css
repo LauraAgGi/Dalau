@@ -206,6 +206,7 @@ select{
     color:var(--l1);
     font-weight: bold;
     margin:10px;
+    box-shadow: 2px 2px 4px var(--l1);
 }
 
 .nosotros{
@@ -351,4 +352,22 @@ ul.datos{
     padding: 12px;
     padding-bottom: 25px;
 }
+a#insert.boton{
+ display:block;
+ width:200px;
+ margin:20px auto;
+}
 
+/* Ficha Modificar */
+form ul.datos li {
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:5px;
+}
+form ul.datos li input{
+    text-align: center;
+}
+
+
+
+    

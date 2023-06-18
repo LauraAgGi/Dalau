@@ -1,18 +1,18 @@
-<?php $titulo='Creación de base de datos'?>
+<?php $titulo='Creación de la base de datos';?>
 <?php include 'fragmentos/_config.php';?>
 <?php include 'fragmentos/_header.php';?>
 
 
 
-<? 
-
+<?php 
+conectar();
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
+$basename = "inmobiliaria";
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS $basename";
 if ($conn->query($sql) === TRUE) {
