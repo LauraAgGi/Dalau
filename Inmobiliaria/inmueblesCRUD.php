@@ -11,7 +11,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {;
       echo '<ul class="inmueble">';
         echo '<li>';
-        echo '<img src="./img/'.$row["foto"].'.jpg" alt="'.$row["nombre"].'">';
+        echo '<img src="./img/'.$row["foto"].'" alt="'.$row["nombre"].'">';
         echo'</li>';
         echo'<li>';
         echo '<ul class="datos">';

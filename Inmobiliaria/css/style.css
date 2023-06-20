@@ -57,9 +57,7 @@ footer ul.menu{
     justify-content: center;
     gap:10px;
 }
-p#cierre,p#cierre a{
-    color:var(--l1);
-}
+
 footer p{
  color:var(--c1);
 }
@@ -95,7 +93,9 @@ img{
     border-radius: 20px;
     text-shadow: 1px 1px 1px;
 }
-
+div.tipos ul li a p{
+    color:var(--c2);
+}
 .tipos ul{ display:grid; gap:20px; grid-template-columns:repeat(3, 1fr);}
 
 .tipos h3{color:var(--c1);}
@@ -198,7 +198,7 @@ select{
     margin-bottom:20px;
 }
 /*Boton cambiar de vista*/
-.boton{
+a.boton , input.boton {
     padding: 10px;
     border:1px solid var(--c3);
     border-radius: 20px;
@@ -207,6 +207,8 @@ select{
     font-weight: bold;
     margin:10px;
     box-shadow: 2px 2px 4px var(--l1);
+    font-size: 20px;
+    font-family:var(--ff1);
 }
 
 .nosotros{
@@ -255,7 +257,7 @@ form{
 form select{
     margin-bottom: 5px;
 }
-/* Usuario al iniciar sesión*/
+/* Usuario al iniciar sesiÃ³n*/
 .usuario{
     background: var(--c1);
     padding: 7px;
@@ -283,7 +285,7 @@ header nav ul.menu .usuario p a{
     color:var(--l1);
 }
 
-/*Diseño del archivo para la instalación*/
+/*DiseÃ±o del archivo para la instalaciÃ³n*/
 ul.install{
   background: var(--l2);
   border-radius: 20px;
@@ -354,7 +356,6 @@ ul.datos{
 }
 a#insert.boton{
  display:block;
- width:200px;
  margin:20px auto;
 }
 

@@ -1,12 +1,12 @@
 <?php
 //DATOS GENERALES
 // $url='http://inmobiliaria.local/Inmobiliaria/';
-$url='http://localhost:8080/Inmobiliaria/';
+$url='http://inmobiliaria.local/Inmobiliaria/';
 
 //Datos de conexión
 $servername = "localhost";
 $username = "root";
-// $password = "root";
+$password = "root";
 $basename = "inmobiliaria";
 
 

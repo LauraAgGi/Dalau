@@ -24,7 +24,7 @@
      <li><label for="precio">Precio:</label>
      <input type="number" id="precio" name="precio"></li>
      <li><input type="submit" value="Cargar" class="boton">
-     <a href="inmueblesCRUD.php" class="boton">Volver a listado de inmuebles></a></li>
+     <a href="inmueblesCRUD.php" class="boton">Volver a listado de inmuebles</a></li>
 
 
 <?php 
