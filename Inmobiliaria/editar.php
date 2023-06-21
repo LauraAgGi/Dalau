@@ -33,19 +33,19 @@ if (isset($_GET['id'])) {
          <li><label for="descripcion">Descripción:</label>
          <input type="text" id="descripcion" value="'.$row["descripcion"].'" name="descripcion"></li>
          <li><label for="tipo">Tipo:</label>
-         <input type="text" id="tipo" value="'.$row["tipo"].'" name="tipo></li>
+         <input type="text" id="tipo" value="'.$row["tipo"].'" name="tipo"</li>
          <li><label for="latitud">Latitud:</label>
          <input type="text" id="latitud" value="'.$row["latitud"].'" name="latitud"></li>
-          <li><label for="longitud">Longitud:</label>
+        <li><label for="longitud">Longitud:</label>
          <input type="text" id="longitud" value="longitud" name="longitud"></li>
-          <li><label for="destacado">Destacado:</label>
-          <input type="number" id="destacado" value="'.$row["destacado"].'" name="destacado"></li>
-          <li><label for="imagen">Imagen:</label>
-          <input type="file" id="imagen" value="'.$row["foto"].'" name="foto"></li>
-          <li><label for="precio">Precio:</label>
-          <input type="number" id="precio" value="'.$row["precio"].'" name="precio"></li>
-          <li><input type="submit" value="Guardar" class="boton">
-          </li>
+         <li><label for="destacado">Destacado:</label>
+        <input type="number" id="destacado" value="'.$row["destacado"].'" name="destacado"></li>
+        <li><label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" value="'.$row["foto"].'" name="foto"></li>
+        <li><label for="precio">Precio:</label>
+        <input type="number" id="precio" value="'.$row["precio"].'" name="precio"></li>
+        <li><input type="submit" value="Guardar" class="boton">
+        </li>
         
          </ul><!--Fin de la lista datos-->
        </form>';   
