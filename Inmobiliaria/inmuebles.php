@@ -45,7 +45,8 @@ if ($result->num_rows > 0) {
     $precio =$row["precio"];
     echo'<a href="ficha.php?id='.$row["id"].'">';
     echo '<li>';
-    echo '<img src="./img/'.$row["foto"].'.jpg" alt="'.$row["nombre"].'">';
+    echo '<img src="./img/'.$row["foto"].'" alt="'.$row["nombre"].'">';
+    echo 
     echo "<h3>".$row["nombre"]. "</h3>";
     echo "<p>".$row["descripcion"]. "</p>";
     echo "<h4>".$row["precio"]. " €". "</h4>";

@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
                 echo "<li>Es un destacado</li>";
             }
             echo "<h4>".$row["precio"]. " €". "</h4>";
-            echo '<a href="modificar.php?id='.$row["id"].'" class="boton">Modificar</a>';
+            echo '<a href="editar.php?id='.$row["id"].'" class="boton">Editar</a>';
             echo '<a href="preguntareli.php" class="boton">Eliminar</a>';
             echo '</ul>';// Fin de la lista datos
         echo "</li>";

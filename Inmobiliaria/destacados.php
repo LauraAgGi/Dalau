@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
     $precio =$row["precio"];
     
     echo '<li>';
-    echo '<img src="img/'.$row["foto"].'.jpg" alt="'.$row["nombre"].'">';
+    echo '<img src="img/'.$row["foto"].'" alt="'.$row["nombre"].'">';
         echo "<h3>".$row["nombre"]. "</h3>";
       echo '</div>';
     echo "<p>".$row["descripcion"]. "</p>";

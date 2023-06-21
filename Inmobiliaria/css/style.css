@@ -198,7 +198,7 @@ select{
     margin-bottom:20px;
 }
 /*Boton cambiar de vista*/
-a.boton , input.boton {
+a.boton, input.boton, button.boton {
     padding: 10px;
     border:1px solid var(--c3);
     border-radius: 20px;
